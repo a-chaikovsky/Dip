@@ -1,0 +1,145 @@
+// лого //
+.logo {
+    font-size: 25px;
+    margin-top: 10px;
+    text-shadow: 0 1px 5px #000;
+
+    .none {
+        color: #DC143C;
+        font-family: 'Monoton', cursive;
+    }
+}
+
+/* меню */
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    margin-top: 10px;
+    position: fixed;
+    opacity: .9;
+    width: 100%;
+    max-width: 2200px;
+    z-index: 1;
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        text-transform: uppercase;
+        transition: 0.8s;
+        padding: 20px;
+        margin: 0 5px;
+
+        &:hover:not(.none):not(.menu-trigger) {
+            background: #AB102F;
+            color: #fff;
+            padding: 10px 20px;
+        }
+    }
+}
+
+/* класс для JS моб меню */
+
+.menu-trigger {
+    display: none;
+    text-align: center;
+}
+
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #121212;
+    height: 100%;
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.footer__social {
+    align-self: center;
+    border-bottom: solid 2px #DC143C;
+
+    // спрайты для footer //
+
+    a {
+        background: url(../img/sp.jpg) no-repeat;
+        cursor: pointer;
+        display: inline-block;
+        height: 60px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        width: 60px;
+        transition: .4s;
+
+        &:hover {
+            box-shadow: 0 15px 20px rgba(220, 20, 60, .5);
+            transform: translateY(-4px);
+        }
+    }
+
+    .vk {
+        background-position: -13px -14.5px;
+        border-radius: 200px;
+    }
+
+    .fb {
+        background-position: -97px -14px;
+        border-radius: 220px;
+    }
+
+    .youtube {
+        background-position: -266px -97px;
+        border-radius: 200px;
+    }
+
+
+    .google {
+        background-position: -264px -259px;
+        border-radius: 200px;
+    }
+}
+
+/* инфа */
+
+.footer__contact {
+    li {
+        color: #e6e7e7;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    a {
+        color: #e6e7e7;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    i {
+        margin-right: 10px;
+        color: #DC143C;
+    }
+}
+
+.contact {
+    color: #e6e7e7;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.copyright {
+    color: #808080;
+    font-size: 13px;
+}

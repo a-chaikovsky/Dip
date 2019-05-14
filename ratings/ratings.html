@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less"/>
+
+    <!-- Logo title -->
+    <link rel="icon" href="../img/logo-title.png">
+
+    <!-- Less -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Noto+Sans:400,700|Roboto:300,300i,400,500,700"
+          rel="stylesheet">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <title>Вопросы и ответы - motocycle</title>
+</head>
+<body>
+
+<header>
+
+    <nav id="myNav">
+        <div class="logo">
+            <a href="../index.html" class="none">Motocycle</a>
+        </div>
+        <a href="#" class="menu-trigger">menu &#9776;</a>
+        <ul>
+            <li><a href="../index.html" title="">Главная</a></li>
+            <li><a href="../order/order.html" title="">Заказ</a></li>
+            <li><a href="../questions/questions.html" title="">Вопросы и ответы</a></li>
+            <li><a href="ratings.html" title="">система оценок</a></li>
+            <li><a href="../contact/contact.html" title="">Контакты</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main class=" section">
+
+    <div class="wrapper">
+
+        <div class="wrapper__title">
+            <h1>Аукционы и система оценок</h1>
+            <p id="startchange"><i class="fas fa-tags"></i></p>
+        </div>
+
+        <div class="wrapper__info">
+            <h4><span>Мотоаукционы BDS и JBA</span></h4>
+            <h5>Мы работаем с двумя крупнейшими мотоаукционами Японии — JBA и BDS.</h5>
+            <p>
+                На BDS торги проходят по средам и пятницам, а на JBA — по вторникам и пятницам. Суммарно в неделю
+                продаётся более 10 000 мотоциклов, скутеров, трайков и вообще всего, что имеет
+                отношение к мототехнике. Чтобы эффективно продать такое количество техники, торги проходят сразу по
+                нескольким линиям, а ставки на каждый лот принимаются в течение максимум 1
+                минуты.
+            </p>
+            <p>
+                Перед тем как попасть в список лотов, каждый мотоцикл проходит проверку эксперта от аукционной площадки
+                и получает оценки за каждый свой узел. Оценщику совершенно не интересно,
+                продастся байк или нет — у него нет никакой выгоды от завышения оценок или сокрытия недостатков. Поэтому
+                оценки получаются максимально точными и честными. На BDS и JBA процесс
+                оценки и предлагаемые покупателям данные несколько отличаются.
+            </p>
+            <h5>За основу для обеих систем можно принять следующее соответствие:</h5>
+            <ul>
+                <li>S (6-10) — идеально</li>
+                <li>А (5) — отлично</li>
+                <li>B (4) — очень хорошо</li>
+                <li>С (3) — удовлетворительно</li>
+                <li>D (2) — плохо</li>
+                <li>R (1) — очень плохо</li>
+            </ul>
+        </div>
+
+        <div class="wrapper__rating-jba">
+            <h4><span>Система оценок JBA</span></h4>
+            <p>
+                Мотоцикл фотографируется с 5 ракурсов, эксперт заполняет лист диагностики и выставляет общую оценку, а
+                также оценки по 4 главным узлам — двигатель, внешний вид, ходовая часть,
+                рама.
+            </p>
+            <img class="technical imgZoom" src="img/ratings-auction.jpg" alt="moto-auction-ratings" title="Оценка мотоцикла">
+            <p>
+                Общая оценка выставляется в виде буквы или цифры и соответствует самой низкой оценке по узлам (например,
+                двигатель А, рама А, ходовая А, внешний вид С — общая оценка будет лишь 3).
+            </p>
+            <h5>Что означают оценки?</h5>
+            <ul>
+                <li>S — новый мотоцикл</li>
+                <li>6 — идеальное состояние</li>
+                <li> 5 — отличное состояние</li>
+                <li> 4.5 — очень хорошее состояние</li>
+                <li>4 — хорошее состояние</li>
+                <li>3.5 — приемлемое состояние</li>
+                <li>3 — удовлетворительное состояние</li>
+                <li>2 — плохое состояние</li>
+                <li>1 — очень плохое состояние</li>
+                <li> R — битые или аварийные мотоциклы</li>
+            </ul>
+            <p>
+                Далее эксперт расставляет на схеме мотоцикла специальные отметки в виде индекса. Буква означает тип
+                повреждения, а цифра — его степень. Например, S2 на колесе — коррозия, средняя
+                степень:</p>
+            <img class="cosmetic imgZoom" src="img/ratings-auction1.jpg" alt="moto-auction-ratings" title="Оценка мотоцикла">
+            <ul>
+                <li>A — царапина</li>
+                <li>B — вмятина</li>
+                <li>H — дырка</li>
+                <li>N — отсутствие</li>
+                <li>P — перекраска, подкраска</li>
+                <li>R — ремонтM</li>
+                <li>S — коррозия, ржавчина, окисление</li>
+                <li>T — поломано, обрезано</li>
+                <li>X — необходима замена</li>
+                <li>W — следы восстановления</li>
+            </ul>
+            <ul>
+                <li>1 – небольшой дефект или повреждение</li>
+                <li>2 – среднее повреждение, видимое, но не столь существенное</li>
+                <li>3 – сильное повреждение.</li>
+            </ul>
+            <p>
+                Кроме того, к каждому узлу эксперт дописывает текстовые комментарии, которые мы переводим с японского,
+                чтобы получить полную информацию о каждом байке.
+            </p>
+        </div>
+
+        <div class="wrapper__rating-bds">
+            <h4><span>Система оценок BDS</span></h4>
+            <p>
+                На торгах BDS мотоциклы получают более пристальное внимание. Оценки выставляются по 6 параметрам —
+                внешний вид, двигатель, рама, задняя часть, передняя часть, электрика. Каждый
+                дефект также описывается текстовым комментарием.
+            </p>
+            <p>
+                Каждый байк фотографируют с 30 ракурсов — 6 общих фотографий и по 4 детальных фото на каждый узел
+                оценки. Кроме того, покупателям предлагаются два видео, снятые с двух ракурсов.
+            </p>
+            <p>
+                На видео эксперт-оценщик проверяет мотоцикл по схеме «запуск, поворотники, фара, стоп-сигнал, сцепление,
+                прогазовка, стоп». Общая оценка выводится по среднему показателю. Все
+                оценки выставляются по 10-балльной системе.
+            </p>
+            <p>
+                При 10-балльной шкале BDS все оценки, что равны или выше 5 имеют очень слабую градацию. 6-10 баллов
+                ставят только почти новым мотоциклам с самым минимальным пробегом. При этом 9
+                вместо 10 могут поставить из-за надорванной заводской упаковки или отсутствия плёнки на спидометре.
+                Часто можно видеть среди лотов мотоциклы в заводской плёнке с пробегом 0 км с
+                оценками 8 баллов сразу по нескольким узлам. Проще говоря, всё что выше 5 баллов имеет состояние близкое
+                к новому мотоциклу.
+            </p>
+        </div>
+
+        <div class="wrapper__example">
+            <ul>
+                <li><h5>Пример оценки</h5></li>
+                <li>SUZUKI INTRUDER M1800R</li>
+                <li>Год выпуска 2011</li>
+                <li>Пробег 3 507 км</li>
+                <li>Общая оценка 5</li>
+                <li>Двигатель 5</li>
+                <li>Передняя часть 6</li>
+                <li>Внешний вид 6</li>
+                <li>Задняя часть 5</li>
+                <li>Электроника и навесное 5</li>
+                <li>Рама 5</li>
+            </ul>
+
+            <div class="wrapper__img">
+                <ul class="accordion">
+                    <li><img class="imgZoom" src="img/rating_moto.jpg" alt="photo Harley-Davidson" title="Оценка мотоцикла Harley Davidson"></li>
+                    <li><img class="imgZoom" src="img/rating_moto2.jpg" alt="photo Harley-Davidson" title="Оценка мотоцикла Harley Davidson"></li>
+                    <li><img class="imgZoom" src="img/rating_moto3.jpg" alt="photo Harley-Davidson" title="Оценка мотоцикла Harley Davidson"></li>
+                    <li><img class="imgZoom" src="img/rating_moto4.jpg" alt="photo Harley-Davidson" title="Оценка мотоцикла Harley Davidson"></li>
+                    <li><img class="imgZoom" src="img/rating_moto5.jpg" alt="photo Harley-Davidson" title="Оценка мотоцикла Harley Davidson"></li>
+                    <li><img class="imgZoom" src="img/rating_motoHD.jpg" alt="rating-list" title="Оценка мотоцикла harley davidson"></li>
+                    <li><img class="imgZoom" src="img/rating_moto_comment.jpg" alt="comment-list" title="Оценка мотоцикла"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper__info-important">
+            <h4><span>Важно знать</span></h4>
+            <h5>Обратите внимание на особенности аукционной оценки:</h5>
+            <ol>
+                <li>
+                    Для всех мотоциклов указывается год первой регистрации, а не год выпуска. Год выпуска может
+                    оказаться старше.
+                </li>
+                <li>
+                    Для мотоциклов с объёмом двигателя менее 400сс год не указывается. Для таких байков мы определяем
+                    год по номеру рамы.
+                </li>
+                <li>
+                    В Японии пробег сверяют на каждом техосмотре и заносят в базу. Если пробег не совпадает с базой, был
+                    изменен или приборка подверглась замене — об этом обязательно будет
+                    стоять специальная отметка.
+                </li>
+                <li>
+                    Оценки снижают за любые изменения конструкции, даже самые незначительные. Замена зеркал,
+                    поворотников, обивки сиденья или грипсов — оценка сразу же идёт вниз. Установлен
+                    прямоток или приборка заменена на тюнинговую — 5-ки байку уже не видать.
+                </li>
+                <li>
+                    Система оценок на JBA считается чуть более строгой. Поэтому нельзя говорить, что В на JBA всегда
+                    равняется 4 на BDS. В целом, этот факт не должен волновать, ведь подробные
+                    фото и видео говорят больше, чем сухие цифры диагностики.
+                </li>
+            </ol>
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer__social">
+        <a href="https://vk.com/" target="_blank" class="vk" title="vk"></a>
+        <a href="https://www.facebook.com/" target="_blank" class="fb" title="facebook"></a>
+        <a href="https://www.youtube.com/" target="_blank" class="youtube" title="youtube"></a>
+        <a href="mailto:achaikovsky91@gmail.com" class="google" title="gmail"></a>
+    </div>
+
+    <div class="footer__contact">
+        <ul>
+            <li><i class="fas fa-phone contact"></i><a href="tel:+375336838211" class="tell" title="number">+375(33)683-82-11</a>
+            </li>
+            <li><i class="fas fa-envelope contact"></i>info@motocycle.by</li>
+            <li><i class="fas fa-home contact"></i>Минск, ул.Чайлытко, д.19</li>
+        </ul>
+        <p class="copyright">
+            2018 &copy; Motocycle.by &#8212; Все права защищены.
+        </p>
+    </div>
+
+</footer>
+
+<!-- JS -->
+<script src="../javascript/script.js"></script>
+<script src="javaScript-ratings/script.js"></script>
+
+</body>
+</html>

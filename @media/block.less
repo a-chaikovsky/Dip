@@ -1,0 +1,28 @@
+/* фон для осн.контента */
+.section {
+    position: relative;
+    padding: 150px 0;
+    overflow: hidden;
+    background: #fff;
+
+}
+
+.section:before,
+.section:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    border-width: 0 0 53px 100vw;
+    border-style: solid;
+
+}
+
+.section:before {
+    top: 0;
+    border-color: #fff #fff #fff #DC143C;
+}
+
+.section:after {
+    bottom: 0;
+    border-color: #DC143C #DC143C #DC143C #fff;
+}

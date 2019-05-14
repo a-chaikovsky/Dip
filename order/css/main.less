@@ -1,0 +1,120 @@
+@import "../../@media/reset";
+@import "../../css/header_and_footer";
+@import "../../@media/block";
+
+body {
+    min-width: 300px;
+    max-width: 2200px;
+    counter-reset: reset;
+}
+
+main {
+    background: #DC143C;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background: #000 !important;
+}
+
+.order {
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 100%;
+
+    &__headline {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+    }
+
+    .section {
+        padding: 42px 0 !important;
+    }
+
+
+    .order__case {
+        display: flex;
+        flex-flow: column;
+        letter-spacing: .2px;
+        line-height: normal;
+
+        h3, p {
+            align-self: center;
+            width: 100%;
+            max-width: 1100px;
+            padding: 0 30px;
+            font-weight: 300;
+        }
+
+        /* сылочки на аукцион и стр. система оценок  */
+
+        a {
+            color: #AB102F;
+            margin-bottom: 10px;
+            align-self: center;
+
+            &:hover {
+                text-shadow: 0 5px 5px #DC143C;
+                color: #DC143C;
+                transform: translateY(-.7px);
+            }
+        }
+    }
+}
+
+
+span {
+    align-self: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    border-bottom: solid 1px #DC143C;
+    width: 25%;
+}
+
+/* счетчик  */
+
+h3::before {
+    font-family: 'Monoton', cursive;
+    color: #DC143C;
+    content: '' counter(reset) '. ';
+    counter-increment: reset;
+    font-size: 40px;
+    padding-right: 10px;
+    opacity: .3;
+}
+
+.btn {
+    padding: 60px 0;
+    text-align: center;
+    line-height: normal;
+    text-transform: uppercase;
+
+    .button {
+        border-radius: 200px;
+        display: inline-block;
+        width: 250px;
+        height: 50px;
+        padding: 15px;
+        color: #fff;
+        background: #AB102F;
+        box-shadow: 0 8px 15px rgba(255, 255, 255, .5);
+        transition: .6s;
+
+        &:hover {
+            background: #FF1243;
+            box-shadow: 0 15px 20px #000;
+            color: #fff;
+        }
+    }
+}
+
+.footer__social {
+    a {
+        background: url('../../img/sp.jpg') no-repeat;
+    }
+}
+
+@import "../../@media/media-mob";

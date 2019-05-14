@@ -1,0 +1,97 @@
+@media screen and (max-width: 1000px) {
+
+    nav {
+        background: #000 !important;
+        display: block;
+        transition: ease-out 1s;
+
+        li {
+            display: block;
+            text-align: center;
+        }
+
+        ul {
+            display: none;
+        }
+
+        a {
+            margin: 0;
+            transition: .3s;
+            padding: 13px;
+
+            &:hover:not(.none):not(.menu-trigger) {
+                background: #DC143C;
+                padding: 13px;
+            }
+        }
+    }
+
+    .menu-trigger {
+        display: block;
+        font-size: 15px;
+    }
+
+    .logo {
+        margin-top: -10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        background: #000;
+        height: 10%;
+    }
+
+    .header {
+        background: none;
+        height: 0 !important;
+    }
+
+    .header__arrow {
+        display: none;
+    }
+
+    .rotate-shadows::before, .rotate-shadows::after {
+        animation: none;
+    }
+
+    .case__btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1216px) {
+
+    .case__wrap {
+        &__card {
+            height: 300px;
+            width: 300px;
+        }
+    }
+
+    .header {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .case__title {
+        p, h1 {
+            font-size: 17px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 969px) {
+
+    .address {
+        width: 292px;
+    }
+}
+

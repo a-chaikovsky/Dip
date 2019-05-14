@@ -1,0 +1,234 @@
+@import "../../@media/reset";
+@import "../../css/header_and_footer";
+@import "../../@media/block";
+
+
+body {
+    min-width: 300px;
+    max-width: 2200px;
+}
+
+nav {
+    background: #000 !important;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    border-bottom: solid 2px #DC143C;
+    padding-bottom: 7px;
+}
+
+/* основной контент */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    margin: 0 auto;
+    color: #000;
+    padding: 0 30px;
+    max-width: 1100px;
+    line-height: normal;
+    text-align: left;
+    letter-spacing: .2px;
+    font-weight: 300;
+
+    h4 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    h5 {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        li {
+            padding-bottom: 8px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+
+        h1 {
+            font-weight: 300;
+        }
+
+        i {
+            font-size: 50px;
+            color: #DC143C;
+            padding: 30px 0;
+        }
+    }
+
+
+    &__rating-jba {
+        img {
+            float: right;
+            margin-left: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .technical {
+            width: 300px;
+        }
+
+        .cosmetic {
+            width: 500px;
+            border: solid 1px #000;
+            padding: 5px;
+            margin-top: 30px;
+        }
+    }
+
+
+    &__example {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 730px;
+        margin: 50px auto;
+
+        /* аккордеон на flex */
+
+        .accordion {
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 0 3px #000;
+
+            /* при hover на другие img глав. img становиться W 90px */
+
+            &:hover {
+                li:nth-child(4) {
+                    width: 90px;
+                }
+            }
+
+            /* стили для img ну тут понятно все! */
+
+            img {
+                width: 310px;
+                height: 300px;
+                filter: contrast(80%) brightness(53%);
+                transition: .6s;
+                border: solid 1px #fff;
+                box-shadow: 0 0 10px 3px #000;
+
+                /* убрать фильтр при hover */
+
+                &:hover {
+                    filter: none;
+                    border: none;
+                }
+            }
+
+            /* стили для case где лежат img */
+
+            li {
+                width: 90px;
+                height: 300px;
+                overflow: hidden;
+                cursor: pointer;
+                display: block;
+                padding: 0;
+                transition: all 2s;
+
+                /* при hover img становятся W 390 px */
+
+                &:hover {
+                    width: 390px;
+                    transition: all 1s;
+                }
+
+                /* главная img без hover на блок всегда имеет W 390 px  */
+
+                &:nth-child(4) {
+                    width: 390px;
+
+                    /* при наведение  на глав img у нее W 390 px */
+
+                    &:hover {
+                        width: 390px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__info-important {
+        ol {
+            list-style: decimal;
+
+            li {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+/* увеличение img  */
+
+#magnify {
+    display: none;
+    position: fixed;
+    max-width: 700px;
+    height: auto;
+    z-index: 9999;
+}
+
+#magnify img {
+    width: 100%;
+}
+
+/* opacity фон при увеличение  */
+
+#overlay {
+    display: none;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 9990;
+}
+
+/* кнопка закрыть */
+#close-popup {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#close-popup {
+    background: url(../img/icon_close.png) no-repeat center;
+    opacity: .5;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.close-popup {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+@import "../../@media/media-mob";
+@import "media-ratings";
